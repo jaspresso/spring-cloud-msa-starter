@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+#          uri: file:///${user.home}/spring-cloud-msa-starter/config-repo
+          uri: file://C:\\project\spring-cloud-msa-starter\config-repo # windows 디렉토리
+          default-label: main # or master

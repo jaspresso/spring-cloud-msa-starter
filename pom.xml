@@ -20,6 +20,9 @@
         <module>backend/catalog-service</module>
         <module>backend/order-service</module>
         <module>backend/admin-service</module>
+        <module>backend/common</module>
+        <module>backend/test-service</module>
+        <module>backend/auth-service</module>
     </modules>
 	<name>spring-cloud-msa-starter</name>
 	<description>Demo project for Spring Boot</description>
@@ -38,6 +41,7 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+        <spring.boot.version>3.5.7</spring.boot.version>
         <spring-cloud.version>2025.0.0</spring-cloud.version>
 	</properties>
 
@@ -52,6 +56,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
                 <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <dependency>
